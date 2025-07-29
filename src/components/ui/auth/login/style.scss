@@ -47,14 +47,16 @@
 
     .right {
       width: 50%;
-      margin: 0 auto;
+      //   margin: 0 auto;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
 
       .right-content {
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
+        padding: 0 16px;
       }
 
       h2 {
@@ -82,7 +84,7 @@
 
         .password-input {
           padding: 12px;
-          padding-right: 60px;
+          //   padding-right: 60px;
           font-size: 16px;
           outline: none;
         }
@@ -90,7 +92,7 @@
         .show-toggle {
           position: absolute;
           right: 12px;
-          top: 20%;
+          top: 22%;
           transform: translateY(-50%);
           font-size: 12px;
           font-weight: 600;
