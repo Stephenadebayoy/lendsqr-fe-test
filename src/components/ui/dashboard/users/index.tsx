@@ -46,7 +46,6 @@ const UsersComponent = ({ users }: { users: UserInterface[] }) => {
   return (
     <div className="users-page">
       <h1 className="users-page__title">Users</h1>
-
       <div className="users-page__stats">
         {statsData.map((stat, index) => (
           <div

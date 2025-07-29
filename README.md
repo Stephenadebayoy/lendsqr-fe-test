@@ -32,7 +32,7 @@ This is a solution to the **Lendsqr Frontend Engineering Test**, built with **Re
 - **TypeScript**
 - **SCSS** (Mobile-first and modular)
 - **React Router** (Routing)
-- **Lucide React Icons**
+- **Lucide React Icons** for testing
 - **LocalStorage** (Authentication persistence)
 - **Jest + React Testing Library** (for unit tests)
 
