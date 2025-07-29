@@ -39,3 +39,8 @@ html {
 button {
   background-color: none;
 }
+a[href^="tel"],
+a[href^="mailto"] {
+  text-decoration: none;
+  color: inherit;
+}

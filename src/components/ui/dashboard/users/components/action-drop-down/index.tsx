@@ -33,7 +33,7 @@ const UserActionsDropdown = ({ handleView }: { handleView: () => void }) => {
   return (
     <div className="actions-dropdown" ref={dropdownRef}>
       <button className="dropdown-toggle" onClick={toggleDropdown}>
-        <MoreVertical size={16} />
+        <MoreVertical size={16} color="#545f7d" />
       </button>
 
       {open && (
