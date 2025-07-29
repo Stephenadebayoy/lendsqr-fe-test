@@ -16,8 +16,7 @@ import { IoFilterSharp } from "react-icons/io5";
 import UserActionsDropdown from "./components/action-drop-down";
 import { useNavigate } from "react-router-dom";
 import OrganizationDropDown from "./components/organisation-dropdown";
-
-import useUsers from "../../../../hooks/useUsers";
+import { UserInterface } from "../../../../types/types";
 
 const statsData = [
   { icon: Users, label: "USERS", value: "2,453", color: "pink" },
@@ -36,8 +35,7 @@ const statsData = [
   },
 ];
 
-const UsersComponent = () => {
-  const { users } = useUsers();
+const UsersComponent = ({ users }: { users: UserInterface[] }) => {
   const [itemsPerPage, setItemsPerPage] = useState(100);
   const navigate = useNavigate();
   const handleView = (userId: string) => {
