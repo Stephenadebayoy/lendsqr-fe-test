@@ -17,6 +17,7 @@ import UserActionsDropdown from "./components/action-drop-down";
 import { useNavigate } from "react-router-dom";
 import OrganizationDropDown from "./components/organisation-dropdown";
 import { UserInterface } from "../../../../types/types";
+import { getStatCardClass, getStatusClass } from "../../../../constants";
 
 const statsData = [
   { icon: Users, label: "USERS", value: "2,453", color: "pink" },
@@ -40,35 +41,6 @@ const UsersComponent = ({ users }: { users: UserInterface[] }) => {
   const navigate = useNavigate();
   const handleView = (userId: string) => {
     navigate(`/user/${userId}`);
-  };
-  const getStatusClass = (status: string) => {
-    switch (status.toLowerCase()) {
-      case "active":
-        return "status--active";
-      case "inactive":
-        return "status--inactive";
-      case "pending":
-        return "status--pending";
-      case "blacklisted":
-        return "status--blacklisted";
-      default:
-        return "";
-    }
-  };
-
-  const getStatCardClass = (color: string) => {
-    switch (color) {
-      case "pink":
-        return "stat-card--pink";
-      case "blue":
-        return "stat-card--blue";
-      case "orange":
-        return "stat-card--orange";
-      case "purple":
-        return "stat-card--purple";
-      default:
-        return "";
-    }
   };
 
   return (
