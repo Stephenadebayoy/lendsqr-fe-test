@@ -16,9 +16,9 @@ This is a solution to the **Lendsqr Frontend Engineering Test**, built with **Re
 
 ## 🔗 Live Demo
 
-👉 [Live App on Vercel](https://lendsqr-frontend-test-nine.vercel.app/)
+👉 [Live App on Vercel](https://lendsqr-fe-test-beta-woad.vercel.app)
 
-📁 [GitHub Repository](https://github.com/Stephenadebayoy/Lendsqr-frontend-test)
+📁 [GitHub Repository](https://github.com/Stephenadebayoy/lendsqr-fe-test)
 
 ---
 
@@ -55,7 +55,7 @@ This is a solution to the **Lendsqr Frontend Engineering Test**, built with **Re
 src/
 │
 ├── components/       # Reusable presentational components
-├── containers/       # Pages and container logic
+├── container/       # Pages and container logic
 ├── routes/           # All application routes
 ├── services/         # Mock API functions
 ├── types/            # TypeScript interfaces
