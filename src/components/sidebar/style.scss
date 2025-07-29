@@ -1,0 +1,137 @@
+/** @format */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  width: 280px;
+  height: 100vh;
+  border-right: 1px solid #f8f7f7;
+  background-color: white;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.01);
+  transition: transform 0.3s ease;
+  z-index: 50;
+  padding-top: 80px;
+  overflow-y: auto;
+  transform: translateX(-100%);
+
+  @media (min-width: 640px) {
+    width: 283px;
+  }
+
+  @media (min-width: 1024px) {
+    transform: translateX(0);
+  }
+
+  &__content {
+    padding: 24px 0;
+
+    @media (min-width: 640px) {
+      padding: 32px 0;
+    }
+  }
+
+  &__org {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 24px;
+    margin-bottom: 32px;
+    color: #374151;
+    cursor: pointer;
+
+    @media (min-width: 640px) {
+      padding: 0 32px;
+      margin-bottom: 40px;
+    }
+
+    span {
+      font-size: 14px;
+
+      @media (min-width: 640px) {
+        font-size: 16px;
+      }
+    }
+
+    &-dropdown-icon {
+      margin-left: auto;
+      color: #39cdcc;
+    }
+
+    &:hover {
+      color: #39cdcc;
+    }
+  }
+
+  &__section {
+    margin-bottom: 24px;
+
+    @media (min-width: 640px) {
+      margin-bottom: 32px;
+    }
+
+    &-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: #545f7d;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 0 24px;
+      margin-bottom: 12px;
+
+      @media (min-width: 640px) {
+        padding: 0 32px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .dashboard_padding {
+    margin-top: 30px !important;
+  }
+
+  &__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &-item {
+      &--active {
+        background: rgba(57, 205, 204, 0.06);
+        border-left: 4px solid #39cdcc;
+
+        .sidebar__menu-link {
+          color: #213f7d;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 24px;
+      color: #545f7d;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.2s ease;
+
+      @media (min-width: 640px) {
+        padding: 12px 32px;
+        font-size: 16px;
+      }
+
+      &:hover {
+        color: #213f7d;
+        background: rgba(57, 205, 204, 0.06);
+        border-left: 4px solid #39cdcc;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        color: #213f7d;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+/** @format */
+
+@use "./variables" as *;
+
+.bg-primary {
+  background-color: $primary;
+}
+.bg-secondary {
+  background-color: $secondary;
+}
+.bg-accent {
+  background-color: $accent;
+}
+.bg-danger {
+  background-color: $danger;
+}
+.bg-success {
+  background-color: $success;
+}
+.bg-white {
+  background-color: $white;
+}
+.bg-black {
+  background-color: $black;
+}
+
+// Text colors
+.text-primary {
+  color: $primary;
+}
+.text-secondary {
+  color: $secondary;
+}
+.text-accent {
+  color: $accent;
+}
+.text-danger {
+  color: $danger;
+}
+.text-success {
+  color: $success;
+}
+.text-white {
+  color: $white;
+}
+.text-black {
+  color: $black;
+}
+.light-blue {
+  color: $light-blue;
+}
+.text-color {
+  color: $text-color;
+}

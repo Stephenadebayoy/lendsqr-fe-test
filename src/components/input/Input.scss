@@ -1,0 +1,30 @@
+/** @format */
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.input-label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.custom-input {
+  padding: 10px 12px;
+  border: 1px solid rgba(84, 95, 125, 0.15);
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  height: 24px;
+
+  &:focus {
+    border-color: #000;
+  }
+  &::placeholder {
+    color: rgba(84, 95, 125, 1);
+    opacity: 0.4;
+  }
+}
