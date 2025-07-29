@@ -3,10 +3,11 @@
 interface InputProps {
   label?: string;
   type?: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
   className?: string;
+  name?: string;
 }
 interface ButtonProps {
   text: string;

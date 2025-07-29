@@ -48,7 +48,7 @@ const OrganizationDropDown = () => {
 
             <div className="form-group">
               <label htmlFor="username">Username</label>
-              <input type="text" id="username" name="username" />
+              <input type="text" id="username" value="" />
             </div>
 
             <div className="form-group">
